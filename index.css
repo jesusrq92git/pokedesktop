@@ -1,0 +1,62 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.center {
+	display: block !important;
+	text-align: -webkit-center !important;
+}
+
+.top-200 {
+  margin-top: 200px;
+}
+
+.bg-body {
+	padding-bottom: 50px;
+}
+
+.navbar {
+	background-color: red;
+	padding: 10px;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.card-spinner {
+	width: 50px !important;
+}
+
+.card-image-pokemon {
+	width: 80px !important;
+}
+
+.card-list {
+	box-shadow: 0px 0px 1px black;
+}
+
+.card-list:hover {
+	transition: .3s;
+	box-shadow: 0px 0px 10px black;
+	cursor: pointer;
+}
+
+.pokemon-card {
+	margin-top: 14vh;
+}
+
+.link {
+	text-decoration: none;
+	color: black;
+}
+
+.link:hover {
+	opacity: .7;
+	transition: .3s;
+	text-decoration: none;
+	color: black;
+}
