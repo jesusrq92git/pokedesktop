@@ -29,18 +29,17 @@ class PokemonList extends Component{
 
     render(){
         const {pokemon} = this.state;
-
         return(
             <React.Fragment>
                 {
                     pokemon ? (
                         <Row>
                             {
-                                pokemon.map(pokemon => (
+                                pokemon.map((pokemon, index) => (
                                     <PokemonCard
-                                        key={pokemon.name}
-                                        name={pokemon.name}
-                                        url={pokemon.url}>
+                                        {...pokemon}
+                                        key={index}
+                                    >
                                     </PokemonCard>
                                 ))
                             }
