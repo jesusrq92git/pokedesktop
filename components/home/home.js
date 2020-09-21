@@ -24,13 +24,13 @@ class Home extends Component {
     }
 
     handleHome = (e) => {
-        let state = {};
+        const nameInput = e.target.name;
+        const valueInput = e.target.value;
 
-        const name = e.target.name;
-        const value = e.target.value;
-
-        state[name] = value;
-        this.setState(state);
+        this.setState({
+          ...this.state,
+          [nameInput]: valueInput
+        })
     }
 
     handleSave = () => {
