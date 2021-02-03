@@ -29,13 +29,10 @@ const NavBar = (props) => {
                 {
                     !!props.homeReducer.name 
                     ? (
-                        <p style={sName}>User: {props.homeReducer.name}</p>
-                    ) : ''
-                }
-                {
-                    !!props.homeReducer.name 
-                    ? (
-                        <Link style={sLink} to="/" onClick={handleLogout}>Logout</Link>
+                        <React.Fragment>
+                          <Link style={sLink} onClick={handleLogout}>Logout</Link>
+                          <p style={sName}>User: {props.homeReducer.name}</p>
+                        </React.Fragment>
                     ) : ''
                 }
             </Navbar>
